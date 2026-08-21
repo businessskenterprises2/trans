@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h2 {
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.lang-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.select-box {
+  flex: 1;
+}
+
+.select-box label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff4b4b;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.btn.recording {
+  background: #28a745;
+}
+
+.secondary-btn {
+  background: #007bff;
+  margin-top: 15px;
+}
+
+.secondary-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.status-text {
+  font-size: 13px;
+  color: #666;
+  margin: 8px 0;
+  min-height: 18px;
+}
+
+.output-box {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.output-box label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #444;
+}
+
+.text-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 45px;
+  margin-top: 4px;
+  color: #333;
+  word-break: break-word;
+}
+
+.text-card.highlight {
+  background: #e8f4fd;
+  border-color: #b6d4fe;
+  color: #084298;
+  font-weight: 500;
+}

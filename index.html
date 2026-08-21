@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Voice Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎙️ AI Voice Translator</h2>
+    
+    <div class="lang-controls">
+      <div class="select-box">
+        <label>बोलण्याची भाषा (Source):</label>
+        <select id="sourceLang">
+          <option value="mr-IN">मराठी (Marathi)</option>
+          <option value="hi-IN">हिंदी (Hindi)</option>
+          <option value="en-US">English</option>
+          <option value="gu-IN">गुजराती (Gujarati)</option>
+        </select>
+      </div>
+
+      <div class="select-box">
+        <label>भाषांतराची भाषा (Target):</label>
+        <select id="targetLang">
+          <option value="en">English</option>
+          <option value="mr">मराठी (Marathi)</option>
+          <option value="hi">हिंदी (Hindi)</option>
+          <option value="gu">गुजराती (Gujarati)</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="micBtn" class="btn">🔴 बोलायला सुरुवात करा</button>
+    <p id="status" class="status-text"></p>
+
+    <div class="output-box">
+      <label>तुम्ही बोललेले वाक्य:</label>
+      <div id="originalText" class="text-card">येथे तुमचे बोलणे दिसेल...</div>
+    </div>
+
+    <div class="output-box">
+      <label>भाषांतर:</label>
+      <div id="translatedText" class="text-card highlight">येथे भाषांतर दिसेल...</div>
+    </div>
+
+    <button id="speakBtn" class="btn secondary-btn" disabled>🔊 भाषांतर पुन्हा ऐका</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
